@@ -21,15 +21,24 @@ namespace CodeReviewByMilka
 
             var temp = new List<Animal>(animals);
 
+            Console.WriteLine("Przed sortowaiem:");
+            Console.Write("Imie: ");
+            Console.WriteLine(string.Join(", ", temp.Select(x => x.Name)));
+            Console.Write("Ilosc nog: ");
+            Console.WriteLine(string.Join(", ", temp.Select(x => x.NumberOfLegs)));
+
             temp = temp
                 .OrderBy(x => x.NumberOfLegs)
                 .ThenBy(x => x.Name)
                 .ToList();
 
+            Console.WriteLine("Po sortowaniu:");
+            Console.Write("Imie: ");
+            Console.WriteLine(string.Join(", ", temp.Select(x => x.Name)));
+            Console.Write("Ilosc nog: ");
+            Console.WriteLine(string.Join(", ", temp.Select(x => x.NumberOfLegs)));
 
 
-            //Console.Write("Przed sortowaiem:");
-            //Console.WriteLine(string.Join(", ", animals.Select(x => x.Name)));
 
             return temp;
         }
