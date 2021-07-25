@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace CodeReviewByMilka
-{
+{    
     class SortAnimals
-    {
-        public static List<Animal> AnimalsSort(List<Animal> animals)
+    {        
+        public List<Animal> AnimalsSort(List<Animal> animals)
         {
             if(animals == null)
             {

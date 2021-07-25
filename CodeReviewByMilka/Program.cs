@@ -18,8 +18,8 @@ namespace CodeReviewByMilka
                 new Animal("Slimak", 1),
                 new Animal("kos", 2)
             };
-
-            SortAnimals.AnimalsSort(animalList);
+            var output = new SortAnimals().AnimalsSort(animalList);
+            
 
             Console.ReadLine();
         }
