@@ -10,7 +10,18 @@ namespace CodeReviewByMilka
     {
         static void Main(string[] args)
         {
-            //Test
+            var animalList = new List<Animal>
+            {
+                new Animal("Kicia", 4),
+                new Animal("Kangur", 2),
+                new Animal("zolw", 4),
+                new Animal("Slimak", 1),
+                new Animal("kos", 2)
+            };
+
+            SortAnimals.AnimalsSort(animalList);
+
+            Console.ReadLine();
         }
     }
 }
